@@ -129,10 +129,14 @@ section {
 }
 
 .map-container {
-    height: 400px;
+    height: 500px;
     background-color: #eee;
     border-radius: 10px;
-    margin: 2rem 0;
+    margin: 2rem auto;
+    max-width: 1200px;
+    width: 90%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /* Footer */
@@ -205,4 +209,102 @@ section {
     .hero h2 {
         font-size: 2rem;
     }
+}
+
+/* Weather Section Styles */
+.weather-section {
+    background-color: var(--color-light);
+    padding: 3rem 1rem;
+}
+
+.weather-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.weather-current {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: var(--color-light);
+    border-radius: 10px;
+}
+
+.weather-current-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.forecast-card {
+    background-color: var(--color-light);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.forecast-card:hover {
+    transform: translateY(-5px);
+}
+
+.weather-loading {
+    text-align: center;
+    color: #666;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.weather-icon {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+.weather-temp {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-dark);
+}
+
+.weather-date {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.weather-desc {
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.weather-details {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.weather-metric {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.weather-error {
+    color: #d32f2f;
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffebee;
+    border-radius: 8px;
 }

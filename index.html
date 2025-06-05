@@ -45,16 +45,33 @@
         </section>
 
         <section id="map" class="map-section">
-            <h2>Beach Cleanup Map</h2>
-            <div id="cleanup-map" class="map-container">
-                <!-- Map will be loaded here -->
+            <h2>Beach Cleanup Map</h2>            <div id="cleanup-map" class="map-container">
+                <iframe
+                    title="Next Beach Cleanup Location"
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=103.94557,1.37149,103.96557,1.39149&layer=mapnik&marker=1.381497,103.955574">
+                </iframe>
             </div>
-        </section>
-
-        <section id="weather" class="weather-section">
-            <h2>Beach Weather</h2>
+        </section>        <section id="weather" class="weather-section">
+            <h2>Beach Weather Forecast</h2>
             <div class="weather-container">
-                <!-- Weather info will be loaded here -->
+                <div class="weather-current">
+                    <h3>Current Conditions at Pasir Ris</h3>
+                    <div id="current-weather" class="weather-current-details">
+                        <div class="weather-loading">Loading current conditions...</div>
+                    </div>
+                </div>
+                <div class="weather-forecast">
+                    <h3>4-Day Forecast</h3>
+                    <div id="forecast-container" class="forecast-grid">
+                        <div class="weather-loading">Loading forecast...</div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
